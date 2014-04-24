@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">	
+		<title>Brittany</title>
+		<link rel="stylesheet" href="nivo-slider\nivo-slider\nivo-slider.css" />
+		<link rel="Stylesheet" href="nivo-slider\nivo-slider\themes\dark\dark.css" />
+		<script src="js/jquery-1.11.0.min.js"></script>
+		<script src="nivo-slider\nivo-slider\jquery.nivo.slider.pack.js"></script>
+		<script>
+			var position = new Array();
+			
+			$(window).ready(function(){
+				$("#photoSlider").nivoSlider({
+					effects:'boxRain',
+					boxCols:10,
+					boxRows:3
+				});
+			});
+		</script>	
+		<style>
+			body{
+				background-color:black;
+			}	
+			#container{
+				max-width:100%;
+				position:relative;
+				margin:0 auto;
+				top:100px;
+			}	
+			.images{
+				height:450px;
+				width:100%;
+			}
+			.navigationBar{
+				text-decoration:none;
+				color:white;
+			}
+			ul{
+				list-style-type:none;
+			}
+			li{
+				display:inline;
+				margin:15px;
+			}
+			#header{
+				position:relative;
+				padding-left:0px;
+				top:80px;
+			}	
+		</style>
+	</head>
+	<body>
+		<div id="header">
+			<ul>
+				<li><a class="navigationBar" href="brittany.html">HOME</a></li>
+				<li><a class="navigationBar" href=" ">ABOUT ME</a></li>
+				<li><a class="navigationBar" href=" ">MUSIC/VIDEOS</a></li>
+				<li><a class="navigationBar" href=" ">PERFORMANCES</a></li>
+				<li><a class="navigationBar" href=" ">CONNECT WITH ME</a></li>
+			</ul>
+		</div>	
+		<div id="container">
+			<div class="slider-wrapper theme-dark">
+				<div class="ribbon"></div>
+				<div id="photoSlider" class="nivoSlider">
+					<img class='image' src="Sample Pictures/Chrysanthemum.jpg" alt="" title="Chrysanthemum" />
+					<img class='image' src="Sample Pictures/Desert.jpg" alt="" title="Desert" />
+					<img class='image' src="Sample Pictures/Hydrangeas.jpg" alt="" title="Hydrangeas" />
+					<img class='image' src="Sample Pictures/Jellyfish.jpg" alt="" title="Jellyfish" />
+					<img class='image' src="Sample Pictures/Koala.jpg" alt="" title="Koala" />
+					<img class='image' src="Sample Pictures/Lighthouse.jpg" alt="" title="Lighthouse" />
+					<img class='image' src="Sample Pictures/Penguins.jpg" alt="" title="Penguins" />
+					<img class='image' src="Sample Pictures/Tulips.jpg" alt="" title="Tulips" />
+				</div>
+			</div>
+		</div>	
+	</body>
+</html>	
